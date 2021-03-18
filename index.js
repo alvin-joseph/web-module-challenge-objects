@@ -90,7 +90,7 @@ Using the reviews array above do the following: (no function needed)
   2. log the whole array to the console, make sure the new review is inside of it   
 */
 
-reviews.push({name: "A-Sizzle", rating: 12, feedback: "Come for the burgers, stay for the dance partay"});
+reviews.push({name: "A-Sizzle", rating: 12, feedback: "Come for the burgers, stay for the dance partay!!"});
 
 console.log('Task 4', reviews);
 
@@ -115,11 +115,11 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
-  /*Your code here*/
+function getReviewByIndex(array, index) {
+  return `${array[index]['name']} gave the restaurant a ${array[index]['rating']} star review, and their feedback was: ${array[index]['feedback']}`;
 }
 
-
+console.log('Task 6', getReviewByIndex(reviews, 0));
   
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -134,11 +134,12 @@ Use the getLastReview function below to do the following:
 */
 
 
-function getLastReview(/*Your code here*/) {
-  /*Your code here*/
+function getLastReview(array) {
+  let index = array.length - 1;
+  return `${array[index]['name']} gave the restaurant a ${array[index]['rating']} star review, and their feedback was: ${array[index]['feedback']}`;
 } 
 
-
+console.log('Task 7', getLastReview(reviews));
 
 ///////////////🍔☕️🍽 STRETCH🍔☕️🍽////////////////////
 
